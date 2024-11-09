@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #131212, #0b6d8b);
+    box-sizing: border-box;
+    color: aliceblue;
+  }
+  
+ 
+ 
+  
+ 

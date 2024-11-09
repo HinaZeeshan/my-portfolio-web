@@ -1,0 +1,107 @@
+.container-contact {
+  width: 80vw;
+  height: auto;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #131212, #0b6d8b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 440px;
+  left: 150px;
+  border: 2px rgb(31, 30, 30);
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px rgb(17, 130, 134);
+}
+.contact-foam {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  background: linear-gradient(to right, #131212, #0b6d8b);
+  padding: 30px;
+
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.container-contact h1 {
+  text-transform: capitalize;
+  font-size: 3em;
+  letter-spacing: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 5px solid;
+  width: 20%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(7) infinite,
+    cursor 0.12s step-end infinite alternate;
+}
+/* cursor blinking */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+/* typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.container-contact p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+label {
+  margin-bottom: 5px;
+  color: white;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #052b36;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 640px) {
+  .container-contact {
+    width: 70vw;
+    height: auto;
+    left: 15px;
+  }
+  .container-contact h1 {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+
+    width: 40%;
+  }
+}

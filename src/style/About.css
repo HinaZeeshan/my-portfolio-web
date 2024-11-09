@@ -1,0 +1,142 @@
+.container-about {
+  width: 80vw;
+  height: auto;
+  background: linear-gradient(to left, #131212, #0b6d8b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  left: 150px;
+  border: 2px rgb(31, 30, 30);
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px rgb(17, 130, 134);
+}
+.pic {
+  margin-top: 28px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.container-about h1 {
+  text-transform: capitalize;
+  font-size: 3em;
+  letter-spacing: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 5px solid;
+  width: 30%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(12) infinite,
+    cursor 0.12s step-end infinite alternate;
+}
+/* cursor blinking */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+/* typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+p {
+  margin: 10px;
+  padding: 4px;
+
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+}
+h4 {
+  margin: 10px;
+  padding: 4px;
+
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+}
+
+h4 span {
+  color: #0b6d8b;
+  font-size: 25px;
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 640px) {
+  .container-about {
+    width: 70vw;
+    left: 15px;
+  }
+  .pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container-about h1 {
+    font-size: 1.5em;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    width: 40%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
