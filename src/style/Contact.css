@@ -80,6 +80,8 @@ textarea:focus {
 }
 
 button {
+  width: 280px;
+  height: 50px;
   background-color: #052b36;
   color: white;
   padding: 12px;
@@ -92,6 +94,32 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+@media (max-width: 1024px) {
+  .container-contact {
+    width: 80vw;
+    height: auto;
+    left: 35px;
+  }
+  .container-contact h1 {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .container-contact {
+    width: 75vw;
+    height: auto;
+    left: 40px;
+  }
+  .container-contact h1 {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+
+    width: 40%;
+  }
+}
 @media (max-width: 640px) {
   .container-contact {
     width: 70vw;
@@ -103,5 +131,27 @@ button:hover {
     letter-spacing: 2px;
 
     width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  .container-contact {
+    width: 70vw;
+    height: auto;
+    left: 25px;
+  }
+  .container-contact h1 {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+
+    width: 60%;
+  }
+
+  .contact-foam {
+    padding: 10px;
+  }
+  button {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
   }
 }

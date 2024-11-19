@@ -2,7 +2,7 @@
   width: 80vw;
   height: auto;
   padding: 4px;
-  background: linear-gradient(to left, #131212, #0b6d8b); 
+  background: linear-gradient(to left, #131212, #0b6d8b);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,30 +37,53 @@ img {
   color: #131212;
 }
 button {
-  width: 160px;
-  height: 60px;
   background-color: #0b6d8b;
   align-items: center;
-  margin-left: 85px;
+  margin-left: 100px;
   border-radius: 10px;
 }
+
 button:hover {
   background-color: #2985a1;
   transform: scale(1.1);
   transition: 3s;
 }
-@media (max-width: 640px) {
+
+@media (max-width: 1024px) {
   .container-card {
-    width: 70vw;
+    width: 80vw;
     height: auto;
-    left: 15px;
-    flex-direction: column;
-    
+    left: 35px;
   }
   .cards {
-    width: 44vw;
+    width: 30vw;
     padding-bottom: 40px;
-  
+  }
+  .cards h3 {
+    font-size: 16px;
+  }
+  .cards p {
+    font-size: 12px;
+  }
+  button {
+    width: 80px;
+    height: 40px;
+
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-card {
+    width: 76vw;
+    height: auto;
+    left: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cards {
+    width: 34vw;
+    padding-bottom: 40px;
   }
   .cards h3 {
     font-size: 18px;
@@ -68,8 +91,58 @@ button:hover {
   .cards p {
     font-size: 14px;
   }
-  button{
-  margin-left: 55px;
-    
+  button {
+    width: 80px;
+    height: 40px;
+
+    margin-left: 50px;
+  }
+}
+@media (max-width: 640px) {
+  .container-card {
+    width: 60vw;
+    height: auto;
+    left: 35px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cards {
+    width: 40vw;
+    margin-left: 50px;
+  }
+  .cards h3 {
+    font-size: 18px;
+  }
+  .cards p {
+    font-size: 14px;
+  }
+  button {
+    margin-left: 65px;
+    width: 80px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-card {
+    width: 55vw;
+    height: auto;
+    left: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cards {
+    width: 45vw;
+    margin-left: 20px;
+  }
+  .cards h3 {
+    font-size: 16px;
+  }
+  .cards p {
+    font-size: 14px;
+  }
+  button {
+    margin-left: 30px;
   }
 }

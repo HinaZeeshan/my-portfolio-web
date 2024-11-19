@@ -23,12 +23,46 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1024px) {
+  .container-Footer {
+    width: 79vw;
+    left: 35px;
+    padding: 10px;
+  }
+  .footer {
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .container-Footer {
+    width: 75vw;
+    left: 35px;
+    padding: 10px;
+  }
+  .footer {
+    align-items: center;
+  }
+}
 @media (max-width: 640px) {
   .container-Footer {
     width: 70vw;
     left: 15px;
+    padding: 10px;
   }
   .footer {
+    align-items: center;
+  }
+}
+@media (max-width:480px) {
+  .container-Footer {
+    width: 70vw;
+    left: 15px;
+    margin: 6px;
+    padding: 10px;
+
+  }
+  .footer {
+    padding: 4px;
     align-items: center;
   }
 }

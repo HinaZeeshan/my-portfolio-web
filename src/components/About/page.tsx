@@ -6,7 +6,9 @@ const About = () => {
     <div>
       <div className="container-about">
       <div className="pic">
-        <Image src="my pic.jpeg" alt="" />
+        <Image src="/my pic.jpeg" alt=""
+        width={300}
+        height={300} />
       </div>
         <p>{`hello, it's Me`}</p>
         <h1>hina zeeshan</h1>

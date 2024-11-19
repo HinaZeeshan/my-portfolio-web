@@ -119,10 +119,24 @@ h4 span {
     transform: translateY(0);
   }
 }
-@media (max-width: 640px) {
+@media (max-width:1024px) {
+  .container-about {
+    width: 80vw;
+  left: 35px;
+  }
+  
+}
+@media (max-width:768px) {
   .container-about {
     width: 70vw;
-    left: 15px;
+    margin-left: 20px;
+  }
+  
+}
+@media (max-width:640px) {
+  .container-about {
+    width: 70vw;
+    
   }
   .pic {
     width: 200px;
@@ -139,4 +153,18 @@ h4 span {
   p {
     font-size: 16px;
   }
+}
+@media (max-width:480px){
+  .container-about {
+    width: 65vw;
+    
+    }
+  .pic {
+    margin-top:28px;
+    width: 150px;
+    height: 150px;
+    
+  }
+  
+ 
 }
